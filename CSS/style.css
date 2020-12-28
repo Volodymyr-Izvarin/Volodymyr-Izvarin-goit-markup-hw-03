@@ -1,0 +1,229 @@
+/* 
+цвет основного текста #757575
+вторичный цвет текста #212121
+цвет акуента #2196F3
+цвет текста в футере rgba(255, 255, 255, 0.6)
+
+темно серый фон #2F303A;
+фон хедера #FFFFFF
+основной фон #E5E5E5
+вторичный фон #F5F4FA
+
+*/
+
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --third-text-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    
+    --primary-background-color: #E5E5E5;
+    --secondary-background-color: #F5F4FA;
+    --header-background-color: #FFFFFF;
+    --hero-background-color: #2F303A;
+}
+
+/* Вся странница */
+body {
+    background: var(--primary-background-color);
+    letter-spacing: 0.03em;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Шапка сайта */
+header {
+    background: var(--header-background-color);
+}
+.logo {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #212121;    
+}
+.logo-part {
+    color: var(--accent-color);
+}
+.site-nav .link {
+    color: var(--secondary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.auth-nav li a {
+    color: var(--primary-text-color);
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+}
+
+/* Странница "Стуия" */
+
+/* Секция "Герой" */
+.hero {
+    background: var(--hero-background-color);
+    letter-spacing: 0.06em;
+}
+.hero-title {
+    color: var(--header-background-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+.hero-button {
+    color: var(--header-background-color);
+    background: var(--accent-color);
+}
+
+/* Секция "Как мы работаем" */
+.work {
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.work-title {
+    color: var(--secondary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+/* Секция "Чем мы занимаемся" */
+.about-title {
+    color: var(--secondary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+/* Секция "Наша команда" */
+.team {
+    background: var(--secondary-background-color);
+}
+.team-title {
+    color: var(--secondary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.team-name {
+    color: var(--secondary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.team-descript {
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Странница "Портфолио" */
+
+/* Секция "Навигации по страннице" */
+.portfolio {
+    background: var(--primary-background-color);
+}
+.portfolio-button {
+    background: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background: var(--accent-color);
+    color: var(--header-background-color);
+}
+.portfolio-name {
+    color: var(--secondary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+}
+.portfolio-descript {
+    columns: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+/* Подвал сайта */
+footer {
+    background: var(--hero-background-color);
+}
+.logo-footer {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--header-background-color);    
+}
+.logo-part {
+    color: var(--accent-color);
+}    
+.adress {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--header-background-color);
+}
+.footer-auth-nav {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--footer-text-color);
+}
